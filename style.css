@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+body{
+    font-family: 'Poppins', sans-serif;;
+    background-color: #161513;
+    color:#c5c5c5;
+}
+/* Header section start */
+header{
+    padding-left: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.7;
+    background: #222;
+    box-shadow: 0px 4.364px 16px -2.182px rgba(0, 0, 0, 0.10);
+}
+nav.navbar{
+    width: 600px;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 4rem;
+}
+.navbar a{
+    color: #fff;
+}
+
+/* Header section End */
+
+/*About Section start  */
+.container{
+    width: 1100px;
+    margin:0 auto;
+    padding:55px 20px;
+}
+.avatar{
+ width: 251px;
+}
+.roleSec{
+    margin:2rem auto;
+}
+.about h1.role{
+    font-size: 55px;
+    width: 650px;
+    margin:0 auto;
+}section div .role > span{
+    background: var(--Primary-Gradient, linear-gradient(116deg, #FF8660 71.79%, #9A33FF 95.51%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.roleSec .about-text{
+    font-size: 18px;
+    width: 50rem;
+    margin:0 auto !important;
+}
+.about-btn{
+margin-top: 3rem;
+}
+.about-btn button{
+    height:3rem;
+    width:10rem;
+    border-radius: 30px;
+    border: none;
+}
+
+/*About section end */
+
+/* Expertise Section Satrts */
+
+.expertise div img{
+    height:60px;
+    width: 80px;
+    cursor: pointer;
+}
+/* Expertise Section End */
+
+/* Projects section Starts */
+.primary-heading{
+    text-align: center;
+    font-size: 35px;
+}
+.project-heading{
+    background: var(--Orange-Gradient, linear-gradient(180deg, #FF8660 0%, #D5491D 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+div.projects .card{
+    height:100px;
+    width:100px;
+    border:1px solid gray
+}
+.project-container{
+    margin:2rem auto;
+    width: 80%;
+    
+}
+/* Projects section End */
+
+

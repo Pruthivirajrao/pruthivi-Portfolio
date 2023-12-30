@@ -1,2 +1,2 @@
-# pruthivi-Portfolio
-It is my portfolio  Repo
+# Portfolio-Website
+ Full Stack Portfolio Website
