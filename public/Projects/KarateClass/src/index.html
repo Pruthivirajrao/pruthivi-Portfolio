@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>Karate Class</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+        }
+        #top-section .styled-top{
+            height: 10px;
+            background-image: linear-gradient(to right,green 20%,orange 20% 40%,green 40% 60%,blue 60% 80%,orange 80%);
+        }
+        #top-section .top-container{
+            background-image: url("..//public/images/karateClass-banner.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:100vh;
+            padding-left:10rem;
+            padding-right:6rem;
+        }
+        #menu{
+            margin-left: 33%;
+            float: right;
+        }
+        #top-section nav li{
+            font-size: 1.3rem;
+            margin-right: 1rem;
+        }
+        #top-section .top-container .navbar .brand-name{
+            font-size: 2rem !important;
+        }
+        #top-section .quote{
+            margin-top: 7rem;
+            margin-bottom:2rem
+        }
+        .bi-play-fill{
+            height:4rem;
+            width:4rem;  
+        }
+        main#weTeach .weTeach-container{
+            margin-top:4rem
+        }
+        section{
+            background-color: rgba(255, 192, 203, 0.147);
+        }
+        .line{
+            height:1px;
+            width:10%;
+            background-color: gray;
+        }
+        ul{
+            list-style: none;
+        }
+        .ourExpertise .enrollBtn{
+            height:3rem;
+            border-radius: 30px;
+        }
+        /* testimonial section */
+        #encorageKids .testimonial .card{
+            height:400px;
+            position: relative;
+        }
+        #encorageKids .testimonial .card-text{
+            text-align: justify;
+        }
+        #encorageKids .testimonial .card-title{
+            margin-top:15%
+        }
+        #tutors .card img{
+            height:5rem;
+            width: 5rem;
+            border-radius: 50%;
+        }
+        #tutors .card img{
+           position: absolute; 
+           left:40%;
+           top:-7%;
+        }
+        /* Testimonial section */
+        .testimonial .card{
+            width: 30rem;
+            border-top-right-radius: 20% !important;
+            border-top-left-radius: 20% !important;
+            border-bottom-left-radius: 20% !important;
+            border-bottom-right-radius: 46% !important;
+        }
+    /* Our Services Section */
+    #ourServices{
+        padding-top: 4rem;
+    }
+    /* testimonial section start*/
+    .carousel .card{
+        border-radius: 2rem !important;
+        border-bottom-right-radius: 7rem !important;
+    }
+    #blogContainer .blog-card .card-img{
+     height:200px;
+     width: 400px;   
+    }
+    /* Testimonial section end */
+
+    /* Footer Section starts */
+    #contact{
+        padding-top: 8rem;
+    }
+    footer a{
+        color:rgb(85, 79, 79);
+        margin-bottom: 3px;
+    }
+    .rightsReserved{
+        margin-top: 5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color:rgb(85, 79, 79);
+    }
+    .connect span{
+        font-size: 1.2rem;
+        margin-right: 2px;
+    }
+    /* Footer Section End */
+    </style>
+</head>
+<body>
+    <div id="top-section">
+        <div class="styled-top"></div>
+        <div class="top-container">
+            <header class="navbar navbar-expand-lg text-center">
+                <div class="navbar-brand text-light brand-name">UKS(Jamnagar)</div>
+                <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
+                <nav class="navbar-collapse collapse" id="menu">
+                    <ul class="navbar-nav" >
+                    <li class="nav-item"><a href="/KarateClass/src/index.html" class="nav-link text-light">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">Dropdown</a></li>
+                    <li class="nav-item"><a href="./components/classes.html" class="nav-link text-light">Classes</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">Blog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">About</a></li>
+                    <li class="nav-item"><a href="./components/contact.html" class="nav-link text-light">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="d-flex justify-content-center align-items-center flex-column text-center text-light quote">
+                <div class=" fs-1 fw-bold">IT'S NEVER TOO <br>LATE TO DEFEND YOURSELF</div>
+                <p class="fs-6 fst-italic">"If Come From Inside You, Always Right One."</p>
+            </div>
+            <div class="d-flex justify-content-center text-center align-items-center">
+                <a class="bi bi-play-fill border border-1 fs-1 rounded rounded-circle text-light"></a>
+                <span class="ms-4 fs-4 text-light">Watch Video</span>
+            </div>
+        </div>
+    </div>
+    <section>
+            <!------------------------------------------------ WE Teaach section end ------------------------------------------------>
+    <main id="weTeach" style="width: 98%">
+        <div class="container weTeach-container">
+            <div class="ourExpertise ps-3 row">
+                <div class="col-5">
+                    <div class="d-flex align-items-center">
+                        <span class="line me-3"></span>
+                        <img src="../public/images/smallKaratekidLogo.png" alt="" class="smallKaratekidLogo">
+                        <span class="line ms-3"></span>
+                    </div>
+                    <div class="encourageKids">
+                        <p class="fs-3 w-50 fw-bold text-danger">ENCOURAGE YOUR KIDS TO LEARN</p>
+                        <p class="w-75">One of the more obvious benefits of karate is that it will give you the tools to defend yourself in dangerous situations and perhaps that is your primary interest in karate. In training, you’ll work through many techniques with real-world applications.</p>
+                        <ul>
+                            <li><span class="bi bi-dot text-danger"></span>Teaches Self Defense</li>
+                            <li><span class="bi bi-dot text-danger"></span> Improves Your Fitness</li>
+                            <li><span class="bi bi-dot text-danger"></span> Acts as Stress Relief</li>
+                            <li><span class="bi bi-dot text-danger"></span> Acts as Stress Relief</li>
+                            <li><span class="bi bi-dot text-danger"></span> Gives You Focus and Discipline</li>
+                            <li><span class="bi bi-dot text-danger"></span>Improves Your Muscle Tone</li>
+                            <li><span class="bi bi-dot text-danger"></span>Promotes Weight Loss</li>
+                            <li class="ms-3 mt-3"><button class="btn btn-danger enrollBtn w-50">Enroll now</button></li>
+                            </ul>
+                    </div>
+                     <p class="fs-3"></p>
+                 </div>
+                <div class="col-7">
+                <img src="../public/images/karateClass-banner.png" alt="" style="border-top-left-radius: 30%; border-bottom-right-radius: 30%;">
+                </div>
+            </div>
+        </div>
+    </main> 
+    <!------------------------------------------------ WE Teach section end ------------------------------------------------>
+    <!-- Encourage kids container -->
+     <article class="p-5" id="encorageKids">
+        <div class="d-flex align-items-center justify-content-center">
+            <span class="line me-3"></span>
+            <img src="../public/images/smallKaratekidLogo.png" alt="" class="smallKaratekidLogo">
+            <span class="line ms-3"></span>
+        </div>
+        <div class="text-center">
+            <p class="fs-3 fw-bold text-danger text-center">OUR TEACHERS</p>
+        </div>
+        <!-- Encourage kidsd end -->
+        <!-- Our Faculty section starts -->
+         <div class="testimonial p-2 d-flex justify-content-between align-items-center" id="tutors">
+            <div class="card text-center testimonial-card me-4 rounded" style="background-color: aqua;">
+                <div class="text-center mb-2"><img src="../public/images/testimonial-1.png" alt=""></div>
+                <div class="card-title "> Hansi Dr.Hariprasad Pattanayak</div>
+                <p class="card-text p-4">Karate is the perfect practice for getting the most out of life physically, mentally, and spiritually. The various self-defense techniques that you'll learn will help you develop physical strength and keep you body fit and flexible. Karate isn’t just for learning self-defense, it’s also great for your overall health and well being.</p>
+            </div>
+            <div class="card text-center testimonial-card me-4" style="background-color: moccasin;">
+                <div class="text-center mtb-2"><img src="../public/images/testimonial-2.png" alt=""></div>
+                <div class="card-title ">Mrs. Juli Mam</div>
+                <p class="card-text p-4">People who participate in karate receive an intense workout, benefiting their <b>strength</b>, <b>balance</b>, and <b>cardiovascular systems</b>. This workout makes martial arts a good activity to include in a personal physical fitness and exercise regimen or in an endurance training routine.</p>
+            </div>
+            <div class="card text-center testimonial-card me-4 rounded" style="background-color: darkseagreen;">
+                <div class="text-center mb-2"><img src="../public/images/testimonial-3.png" alt=""></div>
+                <div class="card-title ">Sensei Umakanta Senapati</div>
+                <p class="card-text p-4">When people practice Karate, they wear special clothes called a karategi. The karategi is made up of a white jacket and white pants. People who practice Karate also wear a colored belt, which tells other people their rank. The belt shows how long you have trained rather than how good you are. Two people wearing different colored belts can be surprisingly similar..</p>
+            </div>
+            <div class="card text-center testimonial-card rounded" style="background-color: darkorchid;">
+                <div class="text-center mb-2"><img src="../public/images/testimonial-4.png" alt=""></div>
+                <div class="card-title">Sensei Krishna Shikari</div>
+                <p class="card-text p-4"> karate, kata refers to a specific pattern of defensive and offensive techniques. Each karate kata can be viewed as a volume of combat techniques which was created by martial arts masters to teach, preserve, and pass down martial knowledge through generations.</p>
+            </div>
+        </div>
+    </article>
+    <!-- faculty sectionEnd -->
+    <!-- OurServices Starts -->
+     <section id="ourServices">
+        <div class="d-flex justify-content-center align-items-center">
+            <span class="line me-3"></span>
+            <img src="../public/images/smallKaratekidLogo.png" alt="" class="smallKaratekidLogo">
+            <span class="line ms-3"></span>
+        </div>
+        <div class="text-center">
+            <p class="fs-3 fw-bold text-danger">OUR SERVICES</p>
+        </div>
+        <div class="row" style="width: 98%;">
+            <div class="col-4 align-items-center ">
+                <div class="d-flex">
+                    <img src="../public/images/services-1.png" alt="" style="width: 20rem;height:5rem">
+                    <div>
+                        <p class="text-uppercase fw-bold mb-2">Won Medal</p>
+                        <p>The Olympic karate competition in 2021 put eight gold medals in dispute: six for the Kumite (fighting) competition, with three weight categories for each gender.   <br><a href="#" class="text-decoration-none text-danger">read more..</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 align-items-center ">
+                <div class="d-flex">
+                    <img src="../public/images/services-2.png" alt="" style="width: 20rem; height:5rem">
+                    <div>
+                        <p class="text-uppercase fw-bold mb-2">Wear Kimono</p>
+                        <p>They comprise a lightweight and breathable fabric to provide freedom of movement during training and competition.   <br><a href="#" class="text-decoration-none text-danger">read more..</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 align-items-center ">
+                <div class="d-flex">
+                    <img src="../public/images/services-3.png" alt="" style="width: 20rem; height:5rem">
+                    <div>
+                        <p class="text-uppercase fw-bold mb-2">Martial Arts</p>
+                        <p>The beauty of martial arts lies not only in their physical movements but also in the culture and philosophy that surrounds them.   <br><a href="#" class="text-decoration-none text-danger">read more..</a></p>
+                    </div>
+                </div>
+            </div>            
+            <div class="col-4 align-items-center ">
+                <div class="d-flex">
+                    <img src="../public/images/services-4.png" alt="" style="width: 20rem; height:5rem">
+                    <div>
+                        <p class="text-uppercase fw-bold mb-2">Punctuality</p>
+                        <p>Martial arts are codified systems and traditions of combat practiced for a number of reasons such as self-defense; military and law enforcement applications; competition; physical, mental.   <br><a href="#" class="text-decoration-none text-danger">read more..</a></p>
+                    </div>
+                </div>
+            </div>   
+            <div class="col-4 align-items-center ">
+                <div class="d-flex">
+                    <img src="../public/images/services-5.png" alt="" style="width: 20rem; height:5rem">
+                    <div>
+                        <p class="text-uppercase fw-bold mb-2">Sharp Memory</p>
+                        <p>Improved memory After comparing a sedentary control group to a group of people doing karate, Italian researchers found that taking part in karate can improve a person’s working memory.   <br><a href="#" class="text-decoration-none text-danger">read more..</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 align-items-center ">
+                <div class="d-flex justify-content-between">
+                    <img src="../public/images/services-6.png" alt="" style="width: 20rem; height:5rem">
+                    <div>
+                        <p class="text-uppercase fw-bold mb-2">Flexible muscel</p>
+                        <p>In order to improve your flexibility, you need to stretch more frequently than the stretching done in your martial arts class. You need to stretch every day and try to stretch at least twice per day.  <br><a href="#" class="text-decoration-none text-danger">read more..</a></p>
+                    </div>
+                </div>
+            </div>       
+         </div>
+    </section>
+        <!-- OurServices End -->
+</section>
+<!-- Testimonial section start -->
+ <section id="testimonials" style="margin-top: 10rem;margin-bottom: 10rem;" >
+    <div class="d-flex justify-content-center align-items-center">
+        <span class="line me-3"></span>
+        <img src="../public/images/smallKaratekidLogo.png" alt="" class="smallKaratekidLogo">
+        <span class="line ms-3"></span>
+    </div>
+    <div class="text-center" style="margin-bottom: 3rem;">
+        <p class="fs-3 fw-bold text-danger text-uppercase">Testimonials</p>
+    </div>
+    <!-- testimonial caousel -->
+     <div class="carousel slide" data-bs-ride="carousel" id="testimonial">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card text-center testimonial-card me-4 rounded" style="background-color: aqua;height: 200px;position: relative;width: 70%; margin-left: 15rem;">
+                    <div class="text-center mb-2"><img src="../public/images/testimonial-1.png" alt="" style="position: absolute;left:20rem; height:50px; width:50px;border-radius: 30px"></div>
+                    <div class="card-title "> Hansi Dr.Hariprasad Pattanayak</div>
+                    <p class="card-text p-4 mb-4">Karate is the perfect practice for getting the most out of life physically, mentally, and spiritually. The various self-defense techniques that you'll learn will help you develop physical strength and keep you body fit and flexible. Karate isn’t just for learning self-defense, it’s also great for your overall health and well being.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card text-center testimonial-card me-4" style="background-color: moccasin;position: relative;width: 70%; margin-left: 15rem;height: 200px">
+                    <div class="text-center mtb-2"><img src="../public/images/testimonial-2.png" alt="" style="position: absolute;left:20rem; height:50px; width:50px;border-radius: 30px"></div>
+                    <div class="card-title ">Mrs. Juli Mam</div>
+                    <p class="card-text p-4 mb-4">People who participate in karate receive an intense workout, benefiting their <b>strength</b>, <b>balance</b>, and <b>cardiovascular systems</b>. This workout makes martial arts a good activity to include in a personal physical fitness and exercise regimen or in an endurance training routine.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card text-center testimonial-card me-4 rounded" style="background-color: darkseagreen;position: relative;width: 70%; margin-left: 15rem;height: 200px">
+                    <div class="text-center mb-2"><img src="../public/images/testimonial-3.png" alt="" style="position: absolute;left:18rem; height:50px; width:50px;border-radius: 30px"></div>
+                    <div class="card-title ">Sensei Umakanta Senapati</div>
+                    <p class="card-text p-4 mb-4">When people practice Karate, they wear special clothes called a karategi. The karategi is made up of a white jacket and white pants. People who practice Karate also wear a colored belt, which tells other people their rank. The belt shows how long you have trained rather than how good you are. Two people wearing different colored belts can be surprisingly similar..</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card text-center testimonial-card rounded" style="background-color: darkorchid;position: relative;width: 70%; margin-left: 15rem;height: 200px">
+                    <div class="text-center mb-2"><img src="../public/images/testimonial-4.png" alt="" style="position: absolute;left:18rem; height:50px; width:50px;border-radius: 30px"></div>
+                    <div class="card-title">Sensei Krishna Shikari</div>
+                    <p class="card-text p-4 mb-4"> karate, kata refers to a specific pattern of defensive and offensive techniques. Each karate kata can be viewed as a volume of combat techniques which was created by martial arts masters to teach, preserve, and pass down martial knowledge through generations.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#testimonial">
+            <span class="carousel-control-prev-icon bg-danger"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#testimonial">
+            <span class="carousel-control-next-icon bg-danger"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button class="active" data-bs-slide-to="0" data-bs-target="#testimonial"></button>
+            <button data-bs-slide-to="1" data-bs-target="#testimonial"></button>
+            <button data-bs-slide-to="2" data-bs-target="#testimonial"></button>
+            <button data-bs-slide-to="3" data-bs-target="#testimonial"></button>
+        </div>
+    </div>
+</section>
+ <section id="blogContainer">
+<div class="d-flex justify-content-center align-items-center">
+    <span class="line me-3"></span>
+    <img src="../public/images/smallKaratekidLogo.png" alt="" class="smallKaratekidLogo">
+    <span class="line ms-3"></span>
+</div>
+<div class="text-center" style="margin-bottom: 3rem;">
+    <p class="fs-3 fw-bold text-danger text-uppercase">Blog Posts</p>
+</div>
+    <div class="d-flex justify-content-around align-items-center">
+        <div class="card blog-Card" style="width:400px" >
+            <div class="header">
+                <a href="https://thekarateblog.com/karate-stances/" target="_blank"><img src="../public/images/Blogimg1.png" alt="" class="card-img" style="height:200px;width: 400px;"></a>
+            </div>
+            <div class="card-body">
+                <div class="card-title"><b>14 Basic Karate Stances Help You Build a Strong Base <a href="https://thekarateblog.com/karate-stances/" target="_blank" class="text-warning">Read more...</a></b></div>
+            </div>
+        </div>
+        <div class="card blog-Card" style="width:400px" >
+            <div class="header">
+                <a href="https://thekarateblog.com/karate-belt-order/" target="_blank"><img src="../public/images/Blogimg2.png" alt="" class="card-img" style="height:200px;width: 400px;"></a>
+            </div>
+            <div class="card-body">
+                <div class="card-title"><b>Karate Belt Order: Ranking System & Belt Colors & Meaning <a href="https://thekarateblog.com/karate-belt-order/" target="_blank" class="text-warning">Read more...</a></b></div>
+            </div>
+        </div>
+        <div class="card blog-Card" style="width:400px" >
+            <div class="header text-center">
+                <a href="https://thekarateblog.com/karate-for-kids/" target="_blank"><img src="../public/images/Blogimg3.png" alt="" class="card-img" style="height:200px; width: 400px;"></a>
+            </div>
+            <div class="card-body">
+                <div class="card-title"><b>Is Karate Good for Kids? (Main Benefits and Potential Concerns You Need to Know) <a href="https://thekarateblog.com/karate-for-kids/" target="_blank" class="text-warning">Read more...</a></b></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- testimonial sectionEnd -->
+<!-- Contact Section Start -->
+    <section id="contact">
+        <footer class="row p-4" style="width: 98%;">
+            <div class="col-5">
+                <p class="fw-bold ">About Foundation</p>
+                <p style="font-size:10px; width:25rem;text-align: justify;">It was regularly working towards women empowerment by training them free of cost self defence training and confidently facing unforeseen situation. Now it has got the assignment to teach self defence to Master trainers which is an important component of  the Youth Policy 13 of Govt of with the sponsorship of Sports Dept. Under the project around 3laks girls will be taught self defence which is indeed a commendable effort of the State Govt.</p> 
+                <p class="fw-bold ">Connect</p>
+                <div class="text-start connect">
+                    <span class="bi bi-facebook"></span>
+                    <span class="bi bi-twitter"></span>
+                    <span class="bi bi-instagram"></span>
+                    <span class="bi bi-linkedin"></span>
+                    <span class="bi bi-medium"></span>
+                </div>
+            </div>
+            <div class="col-3">
+                <p class="fw-bold ">Link</p>
+                <div class="d-flex flex-column ">
+                    <a href="">About</a>
+                    <a href="">Services</a>
+                    <a href="">News</a>
+                    <a href="">Careers</a>
+                    <a href="">Contacts</a>
+                </div>
+            </div>
+            <div class="col-2">
+                <p class="fw-bold ">Company</p>
+                <div class="d-flex flex-column ">
+                    <a href="">About</a>
+                    <a href="">Services</a>
+                    <a href="">News</a>
+                    <a href="">Careers</a>
+                    <a href="">Contacts</a>
+                </div>
+            </div>
+            <div class="col">
+                <p class="fw-bold ">Contact</p>
+                <div class="d-flex flex-column ">
+                    <a href="">About</a>
+                    <a href="">Services</a>
+                    <a href="">News</a>
+                    <a href="">Careers</a>
+                    <a href="">Contacts</a>
+                </div>
+            </div>
+            <div class="rightsReserved text-center"><p>This template is made with ❤️ by Pruthiviraj</p></div>
+        </footer>
+    </section>
+<!-- Contact Section End -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -92,9 +92,14 @@ margin-top: 3rem;
     -webkit-text-fill-color: transparent;
 }
 div.projects .card{
-    height:100px;
-    width:100px;
-    border:1px solid gray
+    height:200px;
+    width:200px;
+    border:1px solid gray;
+    overflow: none;
+}
+div.projects .card a{
+    /* height:200px;
+    width:200px; */
 }
 .project-container{
     margin:2rem auto;

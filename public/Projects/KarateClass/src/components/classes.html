@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>Classes</title>
+    <style>
+            body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #top-section .styled-top{
+            height: 10px;
+            background-image: linear-gradient(to right,green 20%,orange 20% 40%,green 40% 60%,blue 60% 80%,orange 80%);
+        }
+        #top-section .top-container{
+            background-image: url("/public/Projects/KarateClass/public/images/karateClass-banner.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:100vh;
+            padding-left:10rem;
+            padding-right:6rem;
+        }
+        #menu{
+            margin-left: 33%;
+            float: right;
+        }
+        .containers{
+            margin-top: 4rem;
+        }
+        #top-section nav li{
+            font-size: 1.3rem;
+            margin-right: 1rem;
+        }
+        #top-section .top-container .navbar .brand-name{
+            font-size: 2rem !important;
+        }
+        #top-section .quote{
+            margin-top: 11rem;
+            margin-bottom:2rem
+        }
+
+        /* smallKaratekid Logo Start*/
+        .line{
+            height:1px;
+            width:10%;
+            background-color: gray;
+        }
+        /* smallKaratekid Logo End*/
+        .heading{
+            color:rgb(196, 62, 62);
+            font-size: 2.4rem;
+            padding: 10px 0;
+        }
+        /* Classes Container start */
+        #classesContainer{
+            padding: 6rem 8rem 0 8rem;
+        }
+        .card-title{
+            font-style: 18px;
+            font-weight: bold;
+        }
+        .card-subtitle{
+            color:gray;
+            font-size: 14px;
+        }
+        .classTimings button{
+            border:1px solid red;
+            color:red;
+            border-radius: 20px;
+            width:55%;
+            height: 20%;
+        }
+        .classTimings button:hover{
+            color:white;
+            background-color: red;
+        }
+        div.card{
+            border-radius: 60px;
+            border-bottom-right-radius: 160px !important;
+            height:350px;
+        }
+        
+        /* Classes Container End */
+
+        /* footer start */
+
+        footer a{
+        color:rgb(85, 79, 79);
+        text-decoration: none;
+        font-size: 1.1em;
+    }
+    .rightsReserved{
+        margin-top: 5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color:rgb(85, 79, 79);
+        margin-bottom: 3rem;
+    }
+    /* Footer End */
+
+
+    </style>
+</head>
+<body>
+    <div id="top-section">
+        <div class="styled-top"></div>
+        <div class="top-container">
+            <header class="navbar navbar-expand-lg text-center">
+                <div class="navbar-brand text-light brand-name">UKS(Jamnagar)</div>
+                <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
+                <nav class="navbar-collapse collapse" id="menu">
+                    <ul class="navbar-nav" >
+                    <li class="nav-item"><a href="/public/Projects/KarateClass/src/index.html" class="nav-link text-light">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">Dropdown</a></li>
+                    <li class="nav-item"><a href="../components/classes.html" class="nav-link text-light">Classes</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">Blog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">About</a></li>
+                    <li class="nav-item"><a href="/public/Projects/KarateClass/src/components/contact.html" class="nav-link text-light">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="d-flex justify-content-center align-items-center flex-column text-center text-light quote">
+                <div class=" fs-1 fw-bold">CLASSES</div>
+                <p class="fs-6 fst-italic">"If Come From Inside You, Always Right One."</p>
+            </div>
+        </div>
+    </div>
+    <section id="classesContainer" class="text-center">
+        <div class="d-flex align-items-center justify-content-center">
+            <span class="line me-3"></span>
+            <img src="/public/Projects/KarateClass/public/images/smallKaratekidLogo.png" alt="" class="smallKaratekidLogo">
+            <span class="line ms-3"></span>
+        </div>
+        <h1 class="heading">Classes</h1>
+        <div class="classTimings">
+            <div class="row mt-5">
+                <div class="col-3 col-gap-2">
+                    <div class="card" style="background-color: aqua;">
+                        <div class="card-body">
+                            <div class="card-title">Taekwondo</div>
+                            <div class="card-subtitle mb-4">Instructor<br>Maria Jones</div>
+                            <div class="card-subtitle">Sceduled:</div>
+                            <div class="text-center">
+                                <p class="mb-5">Monday - Friday<br>8.00AM - 5.00PM</p>
+                                <button class="btn mt-3">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-gap-2">
+                    <div class="card" style="background-color: rgba(203, 146, 203, 0.263);">
+                        <div class="card-body">
+                            <div class="card-title">Taekwondo</div>
+                            <div class="card-subtitle mb-4">Instructor<br>Maria Jones</div>
+                            <div class="card-subtitle">Sceduled:</div>
+                            <div class="text-center">
+                                <p class="mb-5">Monday - Friday<br>8.00AM - 5.00PM</p>
+                                <button class="btn mt-3">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-gap-2">
+                    <div class="card" style="background-color: rgb(138, 208, 178);">
+                        <div class="card-body">
+                            <div class="card-title">Taekwondo</div>
+                            <div class="card-subtitle mb-4">Instructor<br>Maria Jones</div>
+                            <div class="card-subtitle">Sceduled:</div>
+                            <div class="text-center">
+                                <p class="mb-5">Monday - Friday<br>8.00AM - 5.00PM</p>
+                                <button class="btn mt-3">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-gap-2">
+                    <div class="card" style="background-color: rgba(203, 146, 203, 0.263);">
+                        <div class="card-body card-curved">
+                            <div class="card-title">Taekwondo</div>
+                            <div class="card-subtitle mb-4">Instructor<br>Maria Jones</div>
+                            <div class="card-subtitle">Sceduled:</div>
+                            <div class="text-center">
+                                <p class="mb-5">Monday - Friday<br>8.00AM - 5.00PM</p>
+                                <button class="btn mt-3">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-gap-2 mt-3">
+                    <div class="card" style="background-color: rgba(164, 150, 169, 0.464);">
+                        <div class="card-body">
+                            <div class="card-title">Taekwondo</div>
+                            <div class="card-subtitle mb-4">Instructor<br>Maria Jones</div>
+                            <div class="card-subtitle">Sceduled:</div>
+                            <div class="text-center">
+                                <p class="mb-5">Monday - Friday<br>8.00AM - 5.00PM</p>
+                                <button class="btn mt-3">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-gap-2 mt-3">
+                    <div class="card" style="background-color: rgb(138, 208, 178);">
+                        <div class="card-body">
+                            <div class="card-title">Taekwondo</div>
+                            <div class="card-subtitle mb-4">Instructor<br>Maria Jones</div>
+                            <div class="card-subtitle">Sceduled:</div>
+                            <div class="text-center">
+                                <p class="mb-5">Monday - Friday<br>8.00AM - 5.00PM</p>
+                                <button class="btn mt-3">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-gap-2 mt-3">
+                    <div class="card" style="background-color: aqua;">
+                        <div class="card-body">
+                            <div class="card-title">Taekwondo</div>
+                            <div class="card-subtitle mb-4">Instructor<br>Maria Jones</div>
+                            <div class="card-subtitle">Sceduled:</div>
+                            <div class="text-center">
+                                <p class="mb-5">Monday - Friday<br>8.00AM - 5.00PM</p>
+                                <button class="btn mt-3">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-gap-2 mt-3">
+                    <div class="card" style="background-color: rgba(203, 146, 203, 0.263);">
+                        <div class="card-body">
+                            <div class="card-title">Taekwondo</div>
+                            <div class="card-subtitle mb-4">Instructor<br>Maria Jones</div>
+                            <div class="card-subtitle">Sceduled:</div>
+                            <div class="text-center">
+                                <p class="mb-5">Monday - Friday<br>8.00AM - 5.00PM</p>
+                                <button class="btn mt-3">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containers">
+            <div class="d-flex align-items-center justify-content-center smallKarateLogo">
+                <span class="line me-3"></span>
+                <img src="/public/Projects/KarateClass/public/images/smallKaratekidLogo.png" alt="" class="smallKaratekidLogo">
+                <span class="line ms-3"></span>
+            </div>
+            <h2 class="heading">TESTIMONIALS</h2>
+        </div>
+           <!-- testimonial caousel  start-->
+     <div class="carousel slide pt-5" data-bs-ride="carousel" id="testimonial">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card text-center testimonial-card me-4 rounded" style="background-color: aqua;height: 200px;position: relative;width: 70%; margin-left: 15rem;">
+                    <div class="text-center mb-2"><img src="/public/Projects/KarateClass/public/images/testimonial-1.png" alt="" style="position: absolute;left:20rem; height:50px; width:50px;border-radius: 30px"></div>
+                    <div class="card-title "> Hansi Dr.Hariprasad Pattanayak</div>
+                    <p class="card-text p-4 mb-4">Karate is the perfect practice for getting the most out of life physically, mentally, and spiritually. The various self-defense techniques that you'll learn will help you develop physical strength and keep you body fit and flexible. Karate isn’t just for learning self-defense, it’s also great for your overall health and well being.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card text-center testimonial-card me-4" style="background-color: moccasin;position: relative;width: 70%; margin-left: 15rem;height: 200px">
+                    <div class="text-center mtb-2"><img src="/public/Projects/KarateClass/public/images/testimonial-2.png" alt="" style="position: absolute;left:20rem; height:50px; width:50px;border-radius: 30px"></div>
+                    <div class="card-title ">Mrs. Juli Mam</div>
+                    <p class="card-text p-4 mb-4">People who participate in karate receive an intense workout, benefiting their <b>strength</b>, <b>balance</b>, and <b>cardiovascular systems</b>. This workout makes martial arts a good activity to include in a personal physical fitness and exercise regimen or in an endurance training routine.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card text-center testimonial-card me-4 rounded" style="background-color: darkseagreen;position: relative;width: 70%; margin-left: 15rem;height: 200px">
+                    <div class="text-center mb-2"><img src="/public/Projects/KarateClass/public/images/testimonial-3.png" alt="" style="position: absolute;left:18rem; height:50px; width:50px;border-radius: 30px"></div>
+                    <div class="card-title ">Sensei Umakanta Senapati</div>
+                    <p class="card-text p-4 mb-4">When people practice Karate, they wear special clothes called a karategi. The karategi is made up of a white jacket and white pants. People who practice Karate also wear a colored belt, which tells other people their rank. The belt shows how long you have trained rather than how good you are. Two people wearing different colored belts can be surprisingly similar..</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card text-center testimonial-card rounded" style="background-color: darkorchid;position: relative;width: 70%; margin-left: 15rem;height: 200px">
+                    <div class="text-center mb-2"><img src="/public/Projects/KarateClass/public/images/testimonial-4.png" alt="" style="position: absolute;left:18rem; height:50px; width:50px;border-radius: 30px"></div>
+                    <div class="card-title">Sensei Krishna Shikari</div>
+                    <p class="card-text p-4 mb-4"> karate, kata refers to a specific pattern of defensive and offensive techniques. Each karate kata can be viewed as a volume of combat techniques which was created by martial arts masters to teach, preserve, and pass down martial knowledge through generations.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#testimonial">
+            <span class="carousel-control-prev-icon bg-danger"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#testimonial">
+            <span class="carousel-control-next-icon bg-danger"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button class="active" data-bs-slide-to="0" data-bs-target="#testimonial"></button>
+            <button data-bs-slide-to="1" data-bs-target="#testimonial"></button>
+            <button data-bs-slide-to="2" data-bs-target="#testimonial"></button>
+            <button data-bs-slide-to="3" data-bs-target="#testimonial"></button>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Contact Section Start -->
+    <div class="containers pt-4">
+        <footer class="row p-4" style="width: 98%;">
+            <div class="col-5 text-start">
+                <p class="fw-bold">About Foundation</p>
+                <p style="font-size:10px; width:25rem;text-align: justify;">It was regularly working towards women empowerment by training them free of cost self defence training and confidently facing unforeseen situation. Now it has got the assignment to teach self defence to Master trainers which is an important component of  the Youth Policy 13 of Govt of with the sponsorship of Sports Dept. Under the project around 3laks girls will be taught self defence which is indeed a commendable effort of the State Govt.</p>
+                <p class="fw-bold ">Connect</p>
+                <div class="text-start connect">
+                    <span class="bi bi-facebook"></span>
+                    <span class="bi bi-twitter"></span>
+                    <span class="bi bi-instagram"></span>
+                    <span class="bi bi-linkedin"></span>
+                    <span class="bi bi-medium"></span>
+                </div>
+            </div>
+            <div class="col-3 text-start">
+                <p class="fw-bold">Link</p>
+                <div class="d-flex flex-column ">
+                    <a href="">About</a>
+                    <a href="">Services</a>
+                    <a href="">News</a>
+                    <a href="">Careers</a>
+                    <a href="">Contacts</a>
+                </div>
+            </div>
+            <div class="col-2 text-start">
+                <p class="fw-bold">Company</p>
+                <div class="d-flex flex-column ">
+                    <a href="">About</a>
+                    <a href="">Services</a>
+                    <a href="">News</a>
+                    <a href="">Careers</a>
+                    <a href="">Contacts</a>
+                </div>
+            </div>
+            <div class="col text-start">
+                <p class="fw-bold">Contact</p>
+                <div class="d-flex flex-column ">
+                    <a href="">About</a>
+                    <a href="">Services</a>
+                    <a href="">News</a>
+                    <a href="">Careers</a>
+                    <a href="">Contacts</a>
+                </div>
+            </div>
+            <div class="rightsReserved"><p>This template is made with ❤️ by Pruthiviraj</p></div>
+        </footer>
+    </div>
+<!-- Contact Section End -->
+    </section>
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
